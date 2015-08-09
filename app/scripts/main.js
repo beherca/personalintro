@@ -1,7 +1,8 @@
 'use strict';
 var refresh = function() {
+    //window hight
     var wh = $(window).height() - 130;
-
+    //set content's margin-top equal to window minus offset =130
     $('.content').css('margin-top', wh);
 
     $('.header').headroom({
@@ -10,30 +11,38 @@ var refresh = function() {
         // scroll tolerance in px before state changes
         tolerance: 2
     });
+
+    //first waypoint to show the cristal clear background
     $('.content').waypoint({
         handler: function(direction) {
             $('#bg-img').css('opacity', 1);
         },
         offset: wh * 0.9
     });
+
+    //second waypoint to slowly blur the clear background, so user see blured bg underbeneth
     $('.content').waypoint({
         handler: function(direction) {
             $('#bg-img').css('opacity', 0.5);
         },
         offset: wh * 0.4
     });
+
+    //third waypoint hide the clear background completely
     $('.content').waypoint({
         handler: function(direction) {
             $('#bg-img').css('opacity', 0);
         },
         offset: wh * 0.3
     });
+
     $('.more-menu-btn').click(function(e) {
         $('.left-menu').toggleClass('open');
         // $('.main').toggleClass('pushed');
         $('body').css('overflow-y', 'hidden');
         $('.backdrop').toggleClass('show');
     });
+
     $('#backdrop').click(function(e) {
         $('.left-menu').toggleClass('open');
         // $('.main').toggleClass('pushed');
@@ -43,6 +52,7 @@ var refresh = function() {
         e.preventDefault();
         e.stopImmediatePropagation();
     });
+
     $('.comment-text').dotdotdot({
         height: 90,
         watch: false,
@@ -62,6 +72,7 @@ var refresh = function() {
             }
         }
     });
+
     $('.board').waypoint({
         handler: function(direction) {
             if (direction === 'down') {
@@ -108,25 +119,17 @@ var refresh = function() {
         },
         offset: wh + 120
     });
-    $('#course-list').on('click', function(e) {
-        e.preventDefault();
-        var $t = $(e.currentTarget);
-        // if($t.hasClass('active')){
-
-        // }else{
-        //     $t.addClass('active');
-        //     $('#ws-center').addClass('v-hide-left');
-        // }
-    });
+};
+var initData = function(){
+    var date = new Date();
+    $('#date').text([date.getFullYear(), date.getMonth(), date.getDay()].join('-'));
 };
 $(function() {
     FastClick.attach(document.body);
+    initData();
     refresh();
-    $.ajax({
-        url : 'http://www.storminthecastle.com/wp-content/uploads/2011/10/guitar-icons-07.png'
-    });
 });
 
 $(window).on('orientationchange resize', function() {
-    //refresh();
+    refresh();
 });

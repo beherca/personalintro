@@ -15,7 +15,7 @@
 body {
     overflow-x: hidden;
     background: transparent;
-    font: 14px/1.5 tahoma, arial, 'Hiragino Sans GB', 'Microsoft Yahei', \5b8b\4f53, sans-serif;
+    font: 14px/1.5 font-family: "Yuanti SC", "Lantinghei SC", "Helvetica Neue", Helvetica, STHeiTi, Tahoma, Arial, 'Hiragino Sans GB', 'Microsoft Yahei', \5b8b\4f53, sans-serif;
     -webkit-font-smoothing: antialiased;
     color: #fff;
     height: 100%;
@@ -225,7 +225,9 @@ a:active {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%);
 }
 
-.bg img {
+
+.bg img { 
+    /* see https://css-tricks.com/perfect-full-page-background-image/ */
     position: absolute;
     top: 0;
     left: 0;
