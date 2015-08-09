@@ -122,7 +122,7 @@ var refresh = function() {
 };
 var initData = function(){
     var date = new Date();
-    $('#date').text([date.getFullYear(), date.getMonth(), date.getDay()].join('-'));
+    $('#date').text([date.getFullYear(), date.getMonth() + 1, date.getDate()].join('-'));
 };
 $(function() {
     FastClick.attach(document.body);
