@@ -1,0 +1,1 @@
+一个使用HTML5实现的页面，模仿yahoo weather

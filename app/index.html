@@ -1,0 +1,274 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Beherca</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/detail.css">
+    <!-- endbuild -->
+    
+</head>
+
+<body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="bg">
+        <img id="bg-blured-img" src="/images/blured-bg1.jpg" alt="">
+        <img id="bg-img" src="/images/bg1.jpg" alt="">
+    </div>
+    <div id="backdrop" class="backdrop">
+    </div>
+    <nav class="left-menu">
+        <ul>
+            <li>
+                <a href="https://github.com/beherca">Github</a>
+            </li>
+            <li>
+                <a href="http://weibo.com/beherca">Weibo</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header headroom">
+        <div class="container">
+            <a class="menu more-menu-btn pull-left"><i class="fa fa-bars"></i></a>
+            <h5 class="name text-center">BEHERCA</h5>
+            <a class="menu search-btn pull-right"><i class="fa fa-plus"></i></a>
+        </div>
+    </header>
+    <div id="ws-top" class="container-fluid top-main">
+        <h2>
+            变化是生活的调味品
+        </h2>
+    </div>
+    <div id="ws-center" class="container-fluid main">
+        <div class="content">
+            <div class="inner">
+                <div class="org-info text-left">
+                    <small><i class="fa fa-heart nice"></i></small>
+                </div>
+                <div class="text-left">
+                    <h1 class="org-name text-left text-ellipsis">2015</h1>
+                </div>
+                <div class="board courses">
+                    <h4 class="board-title">关注</h4>
+                    <ul id="course-list" class="board-content">
+                        <li>
+                            <a href="https://www.docker.com/">
+                                <span class="name text-ellipsis">Docker</span>
+                                <span class="arrow"><i class="fa fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kafka.apache.org">
+                                <span class="name text-ellipsis">Kafka</span>
+                                <span class="arrow"><i class="fa fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://12factor.net/">
+                                <span class="name text-ellipsis">The Twelve-Factor App</span>
+                                <span class="arrow"><i class="fa fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.reactivemanifesto.org/">
+                                <span class="name text-ellipsis">The Reactive Manifesto</span>
+                                <span class="arrow"><i class="fa fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://martinfowler.com/bliki/CQRS.html">
+                                <span class="name text-ellipsis">CQRS - Command Query Responsibility Segregation</span>
+                                <span class="arrow"><i class="fa fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <small class="more">还有更多,不列举</small>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="board rating">
+                    <div class="section">
+                        <h4 class="board-title rate">热爱</h4>
+                        <div class="stars-count">
+                            <h2>吃</h2>
+                        </div>
+                        <div class="stars">
+                            <span>
+                                <i class="fa fa-star active"></i>
+                                <i class="fa fa-star active"></i>
+                                <i class="fa fa-star active"></i>
+                                <i class="fa fa-star active"></i>
+                                <i class="fa fa-star active"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <ul class="board-content rate">
+                            <li>
+                                <span class="name">移动开发</span>
+                                <span class="stars">
+                                    <span>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                    </span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="name">前端开发</span>
+                                <span class="stars">
+                                    <span>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                    </span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="name">Scalability</span>
+                                <span class="stars">
+                                    <span>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                    </span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="name">Message System</span>
+                                <span class="stars">
+                                      <span>
+                                          <i class="fa fa-star active"></i>
+                                          <i class="fa fa-star active"></i>
+                                          <i class="fa fa-star active"></i>
+                                          <i class="fa fa-star active"></i>
+                                          <i class="fa fa-star active"></i>
+                                      </span>
+                                </span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="name">AI</span>
+                                <span class="stars">
+                                      <span>
+                                          <i class="fa fa-star active"></i>
+                                          <i class="fa fa-star active"></i>
+                                          <i class="fa fa-star active"></i>
+                                          <i class="fa fa-star active"></i>
+                                          <i class="fa fa-star active"></i>
+                                      </span>
+                                </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="board comments">
+                    <h4 class="board-title">评论</h4>
+                    <ul class="board-content">
+                        <li>
+                            <div class="left-section section">
+                                <div class="buddy-icon-cont">
+                                    <img class="buddy-icon" src="/images/buddyicon01.png">
+                                </div>
+                                <small class="name">beherca</small>
+                            </div>
+                            <div class="right-section section">
+                                <p class="comment-text">Specifying the outcome of a fair coin flip provides less information (lower entropy) than specifying the outcome from a roll of a die</p>
+                                <div class="more-text text-center">
+                                    <i class="fa fa-angle-down"></i>
+                                    <i class="fa fa-angle-up"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left-section section">
+                                <div class="buddy-icon-cont">
+                                    <img class="buddy-icon" src="/images/buddyicon02.png">
+                                </div>
+                                <small class="name">beherca</small>
+                            </div>
+                            <div class="right-section section">
+                                <p class="comment-text">编程语言最难学的 是dialect，是culture</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://weibo.com/beherca/">
+                                <small class="more">查看更多</small>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="board trend">
+                    <h4 class="board-title">剩余生命值</h4>
+                    <div class="board-content">
+                        <canvas id="trend-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/headroom.js/dist/headroom.js"></script>
+    <script src="bower_components/headroom.js/dist/jQuery.headroom.js"></script>
+    <script src="bower_components/headroom.js/dist/angular.headroom.js"></script>
+    <script src="bower_components/waypoints/lib/noframework.waypoints.min.js"></script>
+    <script src="bower_components/jQuery.dotdotdot/src/js/jquery.dotdotdot.js"></script>
+    <script src="bower_components/Chart.js/Chart.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="bower_components/Vague.js/Vague.js"></script>
+    <script src="bower_components/headroom.js/dist/headroom.min.js"></script>
+    <script src="bower_components/headroom.js/dist/jQuery.headroom.min.js"></script>
+    <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="bower_components/jQuery.dotdotdot/src/js/jquery.dotdotdot.min.js"></script>
+    <script src="bower_components/Chart.js/Chart.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
